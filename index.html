@@ -1,0 +1,2314 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ben House</title>
+
+		<link
+			href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+		<script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+		<script>
+			tailwind.config = {
+				darkMode: 'class',
+				theme: {
+					fontFamily: {
+						sans: ['Roboto', 'sans-serif'],
+						body: ['Roboto', 'sans-serif'],
+						mono: ['ui-monospace', 'monospace'],
+					},
+				},
+				corePlugins: {
+					preflight: false,
+				},
+			}
+		</script>
+	</head>
+	<body>
+		<!-- header -->
+		<header>
+			<nav
+				class="relative flex w-full flex-nowrap items-center justify-between bg-blue-900 py-1 text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700 lg:flex-wrap lg:justify-start"
+				data-te-navbar-ref
+			>
+				<div class="flex w-full flex-wrap items-center justify-between px-6">
+					<button
+						class="block border-0 bg-transparent py-2 px-2.5 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 lg:hidden"
+						type="button"
+						data-te-collapse-init
+						data-te-target="#navbarSupportedContent3"
+						aria-controls="navbarSupportedContent3"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="[&>svg]:w-7">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 24 24"
+								fill="currentColor"
+								class="h-7 w-7"
+							>
+								<path
+									fill-rule="evenodd"
+									d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+									clip-rule="evenodd"
+								/>
+							</svg>
+						</span>
+					</button>
+					<!-- logo -->
+					<div>
+						<img src="img/Screenshot (180) 2.png" alt="" class="" />
+					</div>
+					<div
+						class="!visible hidden basis-[100%] items-center lg:!flex lg:basis-auto justify-end"
+						id="navbarSupportedContent3"
+						data-te-collapse-item
+					>
+						<!-- Left links -->
+						<ul
+							class="list-style-none mr-auto flex flex-col pl-0 lg:flex-row lg:items-center space-x-6"
+							data-te-navbar-nav-ref
+						>
+							<li class="lg:pr-2" data-te-nav-item-ref>
+								<a
+									class="active p-0 text-white hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400 text-xl"
+									href="#"
+									data-te-nav-link-ref
+									>BEN HOUSE</a
+								>
+							</li>
+							<li class="lg:pr-2" data-te-nav-item-ref>
+								<a
+									class="p-0 text-white hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400 text-xl"
+									href="#"
+									data-te-nav-link-ref
+									>BIỆT THỰ - VILLA</a
+								>
+							</li>
+							<li class="lg:pr-2" data-te-nav-item-ref>
+								<a
+									class="p-0 text-white hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400 text-xl"
+									href="#"
+									data-te-nav-link-ref
+									>HOMESTAY - CĂN HỘ</a
+								>
+							</li>
+							<li class="lg:pr-2" data-te-nav-item-ref>
+								<a
+									class="p-0 text-white hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400 text-xl"
+									href="#"
+									data-te-nav-link-ref
+									>HOTEL</a
+								>
+							</li>
+							<li class="lg:pr-2" data-te-nav-item-ref>
+								<a
+									class="p-0 text-white hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400 text-xl"
+									href="#"
+									data-te-nav-link-ref
+									>REVIEW</a
+								>
+							</li>
+							<li class="lg:pr-2" data-te-nav-item-ref>
+								<a
+									class="p-0 text-white hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400 text-xl"
+									href="#"
+									data-te-nav-link-ref
+									>LIÊN HỆ</a
+								>
+							</li>
+							<li class="lg:pr-2" data-te-nav-item-ref>
+								<button
+									type="button"
+									class="rounded-full bg-transparent p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+								>
+									<span class="sr-only">View notifications</span>
+									<svg
+										width="25"
+										height="25"
+										viewBox="0 0 25 25"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M10.2914 19.5829C15.4229 19.5829 19.5829 15.4229 19.5829 10.2914C19.5829 5.15991 15.4229 1 10.2914 1C5.15991 1 1 5.15991 1 10.2914C1 15.4229 5.15991 19.5829 10.2914 19.5829Z"
+											stroke="white"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+										<path
+											d="M23.2857 23.2857L16.8571 16.8571"
+											stroke="white"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
+								</button>
+							</li>
+						</ul>
+						<!-- Left links -->
+					</div>
+					<!-- Collapsible wrapper -->
+				</div>
+			</nav>
+		</header>
+		<!-- carousel -->
+		<section>
+			<div
+				id="carouselExampleControls"
+				class="relative"
+				data-te-carousel-init
+				data-te-carousel-slide
+			>
+				<div
+					class="relative w-full overflow-hidden after:clear-both after:block after:content-['']"
+				>
+					<div
+						class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+						data-te-carousel-item
+						data-te-carousel-active
+					>
+						<img
+							src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp"
+							class="block w-full"
+							alt="Wild Landscape"
+						/>
+					</div>
+					<div
+						class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+						data-te-carousel-item
+					>
+						<img
+							src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp"
+							class="block w-full"
+							alt="Camera"
+						/>
+					</div>
+					<div
+						class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+						data-te-carousel-item
+					>
+						<img
+							src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp"
+							class="block w-full"
+							alt="Exotic Fruits"
+						/>
+					</div>
+				</div>
+				<button
+					class="absolute top-0 bottom-0 left-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+					type="button"
+					data-te-target="#carouselExampleControls"
+					data-te-slide="prev"
+				>
+					<span class="inline-block h-8 w-8">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="h-6 w-6"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M15.75 19.5L8.25 12l7.5-7.5"
+							/>
+						</svg>
+					</span>
+					<span
+						class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+						>Previous</span
+					>
+				</button>
+				<button
+					class="absolute top-0 bottom-0 right-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+					type="button"
+					data-te-target="#carouselExampleControls"
+					data-te-slide="next"
+				>
+					<span class="inline-block h-8 w-8">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="h-6 w-6"
+						>
+							<path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+						</svg>
+					</span>
+					<span
+						class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+						>Next</span
+					>
+				</button>
+			</div>
+		</section>
+		<!-- ĐĂNG KÝ PHÒNG -->
+		<section>
+			<div class="relative h-96 bg-gray-50">
+				<div class="absolute -top-8 bottom-0 md:-top-24 w-full z-30">
+					<div class="flex justify-center h-full">
+						<img src="img/Rectangle 3.png" alt="Rectangle 3.png" class="w-11/12 h-full md:w-auto" />
+						<!-- form -->
+						<div class="absolute w-4/5 md:w-1/3">
+							<h1 class="flex justify-center mt-8 font-bold text-2xl text-white">
+								ĐĂNG KÝ ĐẶT PHÒNG
+							</h1>
+
+							<form class="">
+								<div class="mb-1">
+									<label
+										for="title"
+										class="block mb-2 text-sm font-medium text-white dark:text-white"
+										>Bạn cần đặt gì?</label
+									>
+									<input
+										type="text"
+										id="title"
+										class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+										placeholder="Hồ bơi nhiều gái xinh"
+										required
+									/>
+								</div>
+								<div class="mb-1">
+									<label
+										for="date"
+										class="block mb-2 text-sm font-medium text-white dark:text-white"
+										>Số lượng ngày</label
+									>
+									<input
+										type="text"
+										id="date"
+										class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+										placeholder="20 ngày"
+										required
+									/>
+								</div>
+								<div class="mb-1">
+									<label
+										for="human"
+										class="block mb-2 text-sm font-medium text-white dark:text-white"
+										>Số lượng người</label
+									>
+									<input
+										type="text"
+										id="human"
+										class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+										placeholder="10 người"
+										required
+									/>
+								</div>
+								<div class="mb-1">
+									<label
+										for="phone"
+										class="block mb-2 text-sm font-medium text-white dark:text-white"
+										>Số điện thoại</label
+									>
+									<input
+										type="text"
+										id="phone"
+										class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+										placeholder="0123456789"
+										required
+									/>
+								</div>
+
+								<div class="flex justify-end">
+									<button
+										type="submit"
+										class="text-yellow-300 bg-blue-500 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+									>
+										ĐĂNG KÝ NGAY
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- GIỚI THIỆU BEN HOUSE -->
+		<section>
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-2 bg-gray-50 py-12">
+				<!-- pic -->
+				<div class="px-8 md:px-2">
+					<div class="flex justify-center">
+						<img src="img/Thiet-ke-chua-co-ten-19 1.png" alt="Thiet-ke-chua-co-ten-19 1.png" />
+					</div>
+				</div>
+				<div>
+					<div class="flex justify-center mt-8 md:mt-0">
+						<img src="img/Screenshot (180) 4.png" alt="" />
+					</div>
+					<div class="flex justify-center text-lg md:text-2xl font-bold text-blue-800 py-2">
+						<h3>Khu căn hộ cao cấp nhất Vũng Tàu</h3>
+					</div>
+					<div class="flex justify-center">
+						<p class="w-2/3 md:w-3/4 flex text-center line-clamp-4 sm:line-clamp-none">
+							BEN HOUSE tọa lạc trong toà nhà The Sóng – Vũng Tàu, được sinh ra cho những chuyến đi
+							đầy ngẫu hứng của người Sài Gòn, để chủ nhân tìm về mỗi khi mệt mỏi, là nơi để chủ
+							nhân tái tạo năng lượng sau những ngày dài làm việc căng thẳng. Không chỉ sở hữu vị
+							trí “hơn cả kim cương”, The Sóng còn sở hữu kiến trúc độc đáo được lấy cảm hứng từ
+							những cơn sóng uốn lượn của biển cả. Hãy đến với BEN HOUSE – The Sóng Vũng Tàu để tận
+							hưởng những ngày nghỉ trọn vẹn!
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- BIỆT THỰ - VILLA -->
+		<section>
+			<div class="py-8 px-4 md:px-16">
+				<!-- title -->
+				<div class="py-2">
+					<h1 class="flex justify-center text-xl md:text-3xl text-blue-900 font-bold">
+						BIỆT THỰ - VILLA
+					</h1>
+					<span class="flex justify-center text-blue-800 font-sm py-2"
+						>BEN HOUSE Nơi ta đến là nhà</span
+					>
+					<div class="flex justify-center">
+						<div class="border-b border-1 border-blue-900 w-24"></div>
+					</div>
+				</div>
+				<!-- grid -->
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-2 py-8">
+					<div class="py-4 mx-2 md:mx-8 shadow px-2 md:px-4 rounded">
+						<div class="flex justify-center">
+							<img src="img/biet thu/Rectangle 9.png" alt="" />
+						</div>
+						<h1 class="flex justify-center text- text-blue-900 font-bold py-2">14 Lương Văn Can</h1>
+						<!-- rating -->
+						<div class="flex items-center justify-center">
+							<p class="mr-2 text-lg font-bold text-yellow-500 dark:text-gray-400">4.95</p>
+							<svg
+								aria-hidden="true"
+								class="text-yellow-400 w-7 h-7"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<title>First star</title>
+								<path
+									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+								></path>
+							</svg>
+							<svg
+								aria-hidden="true"
+								class="text-yellow-400 w-7 h-7"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<title>Second star</title>
+								<path
+									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+								></path>
+							</svg>
+							<svg
+								aria-hidden="true"
+								class="text-yellow-400 w-7 h-7"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<title>Third star</title>
+								<path
+									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+								></path>
+							</svg>
+							<svg
+								aria-hidden="true"
+								class="text-yellow-400 w-7 h-7"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<title>Fourth star</title>
+								<path
+									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+								></path>
+							</svg>
+							<svg
+								aria-hidden="true"
+								class="text-gray-300 w-7 h-7 dark:text-gray-500"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<title>Fifth star</title>
+								<path
+									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+								></path>
+							</svg>
+						</div>
+						<div class="flex justify-start items-center py-2 border-b">
+							<div class="mr-4">
+								<img src="img/biet thu/Thiet-ke-chua-co-ten-36 1.png" alt="" />
+							</div>
+							<p>12 Khanh</p>
+						</div>
+						<div class="flex justify-start items-center py-2 border-b">
+							<div class="mr-4">
+								<img src="img/biet thu/Thiet-ke-chua-co-ten-33 1.png" alt="" />
+							</div>
+							<p>3 phòng ngủ, 4 giường, 4 wc</p>
+						</div>
+						<div class="flex justify-start items-center py-2 border-b">
+							<div class="mr-4">
+								<img src="img/biet thu/Thiet-ke-chua-co-ten-37 1.png" alt="" />
+							</div>
+							<p>BBQ</p>
+						</div>
+						<div class="flex justify-start items-center py-2 border-b">
+							<div class="mr-4">
+								<img src="img/biet thu/Thiet-ke-chua-co-ten-34 1.png" alt="" />
+							</div>
+							<p>Gần bãi sau</p>
+						</div>
+						<p class="text-amber-500 font-bold text-center py-2">Ngày thường 1.5 triệu</p>
+					</div>
+					<div class="py-4 mx-2 md:mx-8 shadow px-2 md:px-4 rounded">
+						<div class="flex justify-center">
+							<img src="img/biet thu/Rectangle 9.png" alt="" />
+						</div>
+						<h1 class="flex justify-center text- text-blue-900 font-bold py-2">14 Lương Văn Can</h1>
+						<!-- rating -->
+						<div class="flex items-center justify-center">
+							<p class="mr-2 text-lg font-bold text-yellow-500 dark:text-gray-400">4.95</p>
+							<svg
+								aria-hidden="true"
+								class="text-yellow-400 w-7 h-7"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<title>First star</title>
+								<path
+									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+								></path>
+							</svg>
+							<svg
+								aria-hidden="true"
+								class="text-yellow-400 w-7 h-7"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<title>Second star</title>
+								<path
+									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+								></path>
+							</svg>
+							<svg
+								aria-hidden="true"
+								class="text-yellow-400 w-7 h-7"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<title>Third star</title>
+								<path
+									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+								></path>
+							</svg>
+							<svg
+								aria-hidden="true"
+								class="text-yellow-400 w-7 h-7"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<title>Fourth star</title>
+								<path
+									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+								></path>
+							</svg>
+							<svg
+								aria-hidden="true"
+								class="text-gray-300 w-7 h-7 dark:text-gray-500"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<title>Fifth star</title>
+								<path
+									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+								></path>
+							</svg>
+						</div>
+						<div class="flex justify-start items-center py-2 border-b">
+							<div class="mr-4">
+								<img src="img/biet thu/Thiet-ke-chua-co-ten-36 1.png" alt="" />
+							</div>
+							<p>12 Khanh</p>
+						</div>
+						<div class="flex justify-start items-center py-2 border-b">
+							<div class="mr-4">
+								<img src="img/biet thu/Thiet-ke-chua-co-ten-33 1.png" alt="" />
+							</div>
+							<p>3 phòng ngủ, 4 giường, 4 wc</p>
+						</div>
+						<div class="flex justify-start items-center py-2 border-b">
+							<div class="mr-4">
+								<img src="img/biet thu/Thiet-ke-chua-co-ten-37 1.png" alt="" />
+							</div>
+							<p>BBQ</p>
+						</div>
+						<div class="flex justify-start items-center py-2 border-b">
+							<div class="mr-4">
+								<img src="img/biet thu/Thiet-ke-chua-co-ten-34 1.png" alt="" />
+							</div>
+							<p>Gần bãi sau</p>
+						</div>
+						<p class="text-amber-500 font-bold text-center py-2">Ngày thường 1.5 triệu</p>
+					</div>
+					<div class="py-4 mx-2 md:mx-8 shadow px-2 md:px-4 rounded">
+						<div class="flex justify-center">
+							<img src="img/biet thu/Rectangle 9.png" alt="" />
+						</div>
+						<h1 class="flex justify-center text- text-blue-900 font-bold py-2">14 Lương Văn Can</h1>
+						<!-- rating -->
+						<div class="flex items-center justify-center">
+							<p class="mr-2 text-lg font-bold text-yellow-500 dark:text-gray-400">4.95</p>
+							<svg
+								aria-hidden="true"
+								class="text-yellow-400 w-7 h-7"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<title>First star</title>
+								<path
+									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+								></path>
+							</svg>
+							<svg
+								aria-hidden="true"
+								class="text-yellow-400 w-7 h-7"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<title>Second star</title>
+								<path
+									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+								></path>
+							</svg>
+							<svg
+								aria-hidden="true"
+								class="text-yellow-400 w-7 h-7"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<title>Third star</title>
+								<path
+									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+								></path>
+							</svg>
+							<svg
+								aria-hidden="true"
+								class="text-yellow-400 w-7 h-7"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<title>Fourth star</title>
+								<path
+									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+								></path>
+							</svg>
+							<svg
+								aria-hidden="true"
+								class="text-gray-300 w-7 h-7 dark:text-gray-500"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<title>Fifth star</title>
+								<path
+									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+								></path>
+							</svg>
+						</div>
+						<div class="flex justify-start items-center py-2 border-b">
+							<div class="mr-4">
+								<img src="img/biet thu/Thiet-ke-chua-co-ten-36 1.png" alt="" />
+							</div>
+							<p>12 Khanh</p>
+						</div>
+						<div class="flex justify-start items-center py-2 border-b">
+							<div class="mr-4">
+								<img src="img/biet thu/Thiet-ke-chua-co-ten-33 1.png" alt="" />
+							</div>
+							<p>3 phòng ngủ, 4 giường, 4 wc</p>
+						</div>
+						<div class="flex justify-start items-center py-2 border-b">
+							<div class="mr-4">
+								<img src="img/biet thu/Thiet-ke-chua-co-ten-37 1.png" alt="" />
+							</div>
+							<p>BBQ</p>
+						</div>
+						<div class="flex justify-start items-center py-2 border-b">
+							<div class="mr-4">
+								<img src="img/biet thu/Thiet-ke-chua-co-ten-34 1.png" alt="" />
+							</div>
+							<p>Gần bãi sau</p>
+						</div>
+						<p class="text-amber-500 font-bold text-center py-2">Ngày thường 1.5 triệu</p>
+					</div>
+					<div class="py-4 mx-2 md:mx-8 shadow px-2 md:px-4 rounded">
+						<div class="flex justify-center">
+							<img src="img/biet thu/Rectangle 9.png" alt="" />
+						</div>
+						<h1 class="flex justify-center text- text-blue-900 font-bold py-2">14 Lương Văn Can</h1>
+						<!-- rating -->
+						<div class="flex items-center justify-center">
+							<p class="mr-2 text-lg font-bold text-yellow-500 dark:text-gray-400">4.95</p>
+							<svg
+								aria-hidden="true"
+								class="text-yellow-400 w-7 h-7"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<title>First star</title>
+								<path
+									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+								></path>
+							</svg>
+							<svg
+								aria-hidden="true"
+								class="text-yellow-400 w-7 h-7"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<title>Second star</title>
+								<path
+									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+								></path>
+							</svg>
+							<svg
+								aria-hidden="true"
+								class="text-yellow-400 w-7 h-7"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<title>Third star</title>
+								<path
+									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+								></path>
+							</svg>
+							<svg
+								aria-hidden="true"
+								class="text-yellow-400 w-7 h-7"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<title>Fourth star</title>
+								<path
+									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+								></path>
+							</svg>
+							<svg
+								aria-hidden="true"
+								class="text-gray-300 w-7 h-7 dark:text-gray-500"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<title>Fifth star</title>
+								<path
+									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+								></path>
+							</svg>
+						</div>
+						<div class="flex justify-start items-center py-2 border-b">
+							<div class="mr-4">
+								<img src="img/biet thu/Thiet-ke-chua-co-ten-36 1.png" alt="" />
+							</div>
+							<p>12 Khanh</p>
+						</div>
+						<div class="flex justify-start items-center py-2 border-b">
+							<div class="mr-4">
+								<img src="img/biet thu/Thiet-ke-chua-co-ten-33 1.png" alt="" />
+							</div>
+							<p>3 phòng ngủ, 4 giường, 4 wc</p>
+						</div>
+						<div class="flex justify-start items-center py-2 border-b">
+							<div class="mr-4">
+								<img src="img/biet thu/Thiet-ke-chua-co-ten-37 1.png" alt="" />
+							</div>
+							<p>BBQ</p>
+						</div>
+						<div class="flex justify-start items-center py-2 border-b">
+							<div class="mr-4">
+								<img src="img/biet thu/Thiet-ke-chua-co-ten-34 1.png" alt="" />
+							</div>
+							<p>Gần bãi sau</p>
+						</div>
+						<p class="text-amber-500 font-bold text-center py-2">Ngày thường 1.5 triệu</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- HOMESTAY - CĂN HỘ -->
+		<section>
+			<div class="px-4 md:px-16">
+				<!-- title -->
+				<div class="py-2">
+					<h1 class="flex justify-center text-xl md:text-3xl text-blue-900 font-bold">
+						HOMESTAY - CĂN HỘ
+					</h1>
+					<span class="flex justify-center text-blue-800 font-sm py-2"
+						>BEN HOUSE Nơi ta đến là nhà</span
+					>
+					<div class="flex justify-center">
+						<div class="border-b border-1 border-blue-900 w-24"></div>
+					</div>
+				</div>
+				<!-- grid -->
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-2 py-8">
+					<div class="py-4 mx-2 md:mx-8 shadow px-2 md:px-4 rounded">
+						<div class="flex justify-center">
+							<img src="img/biet thu/Rectangle 9.png" alt="" />
+						</div>
+						<h1 class="flex justify-center text- text-blue-900 font-bold py-2">14 Lương Văn Can</h1>
+						<!-- rating -->
+						<div class="flex items-center justify-center">
+							<p class="mr-2 text-lg font-bold text-yellow-500 dark:text-gray-400">4.95</p>
+							<svg
+								aria-hidden="true"
+								class="text-yellow-400 w-7 h-7"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<title>First star</title>
+								<path
+									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+								></path>
+							</svg>
+							<svg
+								aria-hidden="true"
+								class="text-yellow-400 w-7 h-7"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<title>Second star</title>
+								<path
+									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+								></path>
+							</svg>
+							<svg
+								aria-hidden="true"
+								class="text-yellow-400 w-7 h-7"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<title>Third star</title>
+								<path
+									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+								></path>
+							</svg>
+							<svg
+								aria-hidden="true"
+								class="text-yellow-400 w-7 h-7"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<title>Fourth star</title>
+								<path
+									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+								></path>
+							</svg>
+							<svg
+								aria-hidden="true"
+								class="text-gray-300 w-7 h-7 dark:text-gray-500"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<title>Fifth star</title>
+								<path
+									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+								></path>
+							</svg>
+						</div>
+						<div class="flex justify-start items-center py-2 border-b">
+							<div class="mr-4">
+								<img src="img/biet thu/Thiet-ke-chua-co-ten-36 1.png" alt="" />
+							</div>
+							<p>12 Khanh</p>
+						</div>
+						<div class="flex justify-start items-center py-2 border-b">
+							<div class="mr-4">
+								<img src="img/biet thu/Thiet-ke-chua-co-ten-33 1.png" alt="" />
+							</div>
+							<p>3 phòng ngủ, 4 giường, 4 wc</p>
+						</div>
+						<div class="flex justify-start items-center py-2 border-b">
+							<div class="mr-4">
+								<img src="img/biet thu/Thiet-ke-chua-co-ten-37 1.png" alt="" />
+							</div>
+							<p>BBQ</p>
+						</div>
+						<div class="flex justify-start items-center py-2 border-b">
+							<div class="mr-4">
+								<img src="img/biet thu/Thiet-ke-chua-co-ten-34 1.png" alt="" />
+							</div>
+							<p>Gần bãi sau</p>
+						</div>
+						<p class="text-amber-500 font-bold text-center py-2">Ngày thường 1.5 triệu</p>
+					</div>
+					<div class="py-4 mx-2 md:mx-8 shadow px-2 md:px-4 rounded">
+						<div class="flex justify-center">
+							<img src="img/biet thu/Rectangle 9 (1).png" alt="" />
+						</div>
+						<h1 class="flex justify-center text- text-blue-900 font-bold py-2">14 Lương Văn Can</h1>
+						<!-- rating -->
+						<div class="flex items-center justify-center">
+							<p class="mr-2 text-lg font-bold text-yellow-500 dark:text-gray-400">4.95</p>
+							<svg
+								aria-hidden="true"
+								class="text-yellow-400 w-7 h-7"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<title>First star</title>
+								<path
+									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+								></path>
+							</svg>
+							<svg
+								aria-hidden="true"
+								class="text-yellow-400 w-7 h-7"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<title>Second star</title>
+								<path
+									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+								></path>
+							</svg>
+							<svg
+								aria-hidden="true"
+								class="text-yellow-400 w-7 h-7"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<title>Third star</title>
+								<path
+									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+								></path>
+							</svg>
+							<svg
+								aria-hidden="true"
+								class="text-yellow-400 w-7 h-7"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<title>Fourth star</title>
+								<path
+									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+								></path>
+							</svg>
+							<svg
+								aria-hidden="true"
+								class="text-gray-300 w-7 h-7 dark:text-gray-500"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<title>Fifth star</title>
+								<path
+									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+								></path>
+							</svg>
+						</div>
+						<div class="flex justify-start items-center py-2 border-b">
+							<div class="mr-4">
+								<img src="img/biet thu/Thiet-ke-chua-co-ten-36 1.png" alt="" />
+							</div>
+							<p>12 Khanh</p>
+						</div>
+						<div class="flex justify-start items-center py-2 border-b">
+							<div class="mr-4">
+								<img src="img/biet thu/Thiet-ke-chua-co-ten-33 1.png" alt="" />
+							</div>
+							<p>3 phòng ngủ, 4 giường, 4 wc</p>
+						</div>
+						<div class="flex justify-start items-center py-2 border-b">
+							<div class="mr-4">
+								<img src="img/biet thu/Thiet-ke-chua-co-ten-37 1.png" alt="" />
+							</div>
+							<p>BBQ</p>
+						</div>
+						<div class="flex justify-start items-center py-2 border-b">
+							<div class="mr-4">
+								<img src="img/biet thu/Thiet-ke-chua-co-ten-34 1.png" alt="" />
+							</div>
+							<p>Gần bãi sau</p>
+						</div>
+						<p class="text-amber-500 font-bold text-center py-2">Ngày thường 1.5 triệu</p>
+					</div>
+					<div class="py-4 mx-2 md:mx-8 shadow px-2 md:px-4 rounded">
+						<div class="flex justify-center">
+							<img src="img/biet thu/Rectangle 9 (2).png" alt="" />
+						</div>
+						<h1 class="flex justify-center text- text-blue-900 font-bold py-2">
+							7A/14 Lê Hồng Phong
+						</h1>
+						<!-- rating -->
+						<div class="flex items-center justify-center">
+							<p class="mr-2 text-lg font-bold text-yellow-500 dark:text-gray-400">4.95</p>
+							<svg
+								aria-hidden="true"
+								class="text-yellow-400 w-7 h-7"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<title>First star</title>
+								<path
+									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+								></path>
+							</svg>
+							<svg
+								aria-hidden="true"
+								class="text-yellow-400 w-7 h-7"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<title>Second star</title>
+								<path
+									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+								></path>
+							</svg>
+							<svg
+								aria-hidden="true"
+								class="text-yellow-400 w-7 h-7"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<title>Third star</title>
+								<path
+									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+								></path>
+							</svg>
+							<svg
+								aria-hidden="true"
+								class="text-yellow-400 w-7 h-7"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<title>Fourth star</title>
+								<path
+									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+								></path>
+							</svg>
+							<svg
+								aria-hidden="true"
+								class="text-gray-300 w-7 h-7 dark:text-gray-500"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<title>Fifth star</title>
+								<path
+									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+								></path>
+							</svg>
+						</div>
+						<div class="flex justify-start items-center py-2 border-b">
+							<div class="mr-4">
+								<img src="img/biet thu/Thiet-ke-chua-co-ten-36 1.png" alt="" />
+							</div>
+							<p>12 Khanh</p>
+						</div>
+						<div class="flex justify-start items-center py-2 border-b">
+							<div class="mr-4">
+								<img src="img/biet thu/Thiet-ke-chua-co-ten-33 1.png" alt="" />
+							</div>
+							<p>3 phòng ngủ, 4 giường, 4 wc</p>
+						</div>
+						<div class="flex justify-start items-center py-2 border-b">
+							<div class="mr-4">
+								<img src="img/biet thu/Thiet-ke-chua-co-ten-37 1.png" alt="" />
+							</div>
+							<p>BBQ</p>
+						</div>
+						<div class="flex justify-start items-center py-2 border-b">
+							<div class="mr-4">
+								<img src="img/biet thu/Thiet-ke-chua-co-ten-34 1.png" alt="" />
+							</div>
+							<p>Gần bãi sau</p>
+						</div>
+						<p class="text-amber-500 font-bold text-center py-2">Ngày thường 1.5 triệu</p>
+					</div>
+					<div class="py-4 mx-2 md:mx-8 shadow px-2 md:px-4 rounded">
+						<div class="flex justify-center">
+							<img src="img/biet thu/Rectangle 9 (3).png" alt="" />
+						</div>
+						<h1 class="flex justify-center text- text-blue-900 font-bold py-2">14 Lương Văn Can</h1>
+						<!-- rating -->
+						<div class="flex items-center justify-center">
+							<p class="mr-2 text-lg font-bold text-yellow-500 dark:text-gray-400">4.95</p>
+							<svg
+								aria-hidden="true"
+								class="text-yellow-400 w-7 h-7"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<title>First star</title>
+								<path
+									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+								></path>
+							</svg>
+							<svg
+								aria-hidden="true"
+								class="text-yellow-400 w-7 h-7"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<title>Second star</title>
+								<path
+									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+								></path>
+							</svg>
+							<svg
+								aria-hidden="true"
+								class="text-yellow-400 w-7 h-7"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<title>Third star</title>
+								<path
+									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+								></path>
+							</svg>
+							<svg
+								aria-hidden="true"
+								class="text-yellow-400 w-7 h-7"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<title>Fourth star</title>
+								<path
+									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+								></path>
+							</svg>
+							<svg
+								aria-hidden="true"
+								class="text-gray-300 w-7 h-7 dark:text-gray-500"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<title>Fifth star</title>
+								<path
+									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+								></path>
+							</svg>
+						</div>
+						<div class="flex justify-start items-center py-2 border-b">
+							<div class="mr-4">
+								<img src="img/biet thu/Thiet-ke-chua-co-ten-36 1.png" alt="" />
+							</div>
+							<p>12 Khanh</p>
+						</div>
+						<div class="flex justify-start items-center py-2 border-b">
+							<div class="mr-4">
+								<img src="img/biet thu/Thiet-ke-chua-co-ten-33 1.png" alt="" />
+							</div>
+							<p>3 phòng ngủ, 4 giường, 4 wc</p>
+						</div>
+						<div class="flex justify-start items-center py-2 border-b">
+							<div class="mr-4">
+								<img src="img/biet thu/Thiet-ke-chua-co-ten-37 1.png" alt="" />
+							</div>
+							<p>BBQ</p>
+						</div>
+						<div class="flex justify-start items-center py-2 border-b">
+							<div class="mr-4">
+								<img src="img/biet thu/Thiet-ke-chua-co-ten-34 1.png" alt="" />
+							</div>
+							<p>Gần bãi sau</p>
+						</div>
+						<p class="text-amber-500 font-bold text-center py-2">Ngày thường 1.5 triệu</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- HOTEL KHÁCH SẠN -->
+		<section>
+			<div class="px-4 md:px-16">
+				<!-- title -->
+				<div class="py-2">
+					<h1 class="flex justify-center text-xl md:text-3xl text-blue-900 font-bold">
+						HOTEL KHÁCH SẠN
+					</h1>
+					<span class="flex justify-center text-blue-800 font-sm py-2"
+						>BEN HOUSE Nơi ta đến là nhà</span
+					>
+					<div class="flex justify-center">
+						<div class="border-b border-1 border-blue-900 w-24"></div>
+					</div>
+				</div>
+				<!-- grid -->
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 py-8">
+					<div class="shadow rounded">
+						<div class="flex justify-center">
+							<img src="img/khach san/Rectangle 15.png" alt="" class="w-full rounded-t" />
+						</div>
+						<div>
+							<h5 class="flex justify-center py-2 font-medium">Phòng Premium</h5>
+							<div class="flex justify-center pb-2">
+								<p class="text-gray-500 line-through">2.000.000₫</p>
+								<p class="text-amber-600">1.395.000₫</p>
+							</div>
+						</div>
+					</div>
+					<div class="grid grid-cols-2 gap-3 md:gap-4">
+						<div class="shadow rounded">
+							<div class="flex justify-center">
+								<img src="img/khach san/Rectangle 15.png" alt="rounded-t" />
+							</div>
+							<div class="mb-2">
+								<h5 class="flex justify-center font-medium">Phòng Premium</h5>
+								<div class="flex justify-center">
+									<p class="text-gray-500 line-through">2.000.000₫</p>
+									<p class="text-amber-600">1.395.000₫</p>
+								</div>
+							</div>
+						</div>
+						<div class="shadow rounded">
+							<div class="flex justify-center">
+								<img src="img/khach san/Rectangle 15.png" alt="rounded-t" />
+							</div>
+							<div class="mb-2">
+								<h5 class="flex justify-center font-medium">Phòng Premium</h5>
+								<div class="flex justify-center">
+									<p class="text-gray-500 line-through">2.000.000₫</p>
+									<p class="text-amber-600">1.395.000₫</p>
+								</div>
+							</div>
+						</div>
+						<div class="shadow rounded">
+							<div class="flex justify-center">
+								<img src="img/khach san/Rectangle 15.png" alt="rounded-t" />
+							</div>
+							<div class="mb-2">
+								<h5 class="flex justify-center font-medium">Phòng Premium</h5>
+								<div class="flex justify-center">
+									<p class="text-gray-500 line-through">2.000.000₫</p>
+									<p class="text-amber-600">1.395.000₫</p>
+								</div>
+							</div>
+						</div>
+						<div class="shadow rounded">
+							<div class="flex justify-center">
+								<img src="img/khach san/Rectangle 15.png" alt="rounded-t" />
+							</div>
+							<div class="mb-2">
+								<h5 class="flex justify-center font-medium">Phòng Premium</h5>
+								<div class="flex justify-center">
+									<p class="text-gray-500 line-through">2.000.000₫</p>
+									<p class="text-amber-600">1.395.000₫</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="flex justify-center">
+					<button class="rounded text-xl bg-blue-900 text-white p-2">XEM THÊM</button>
+				</div>
+			</div>
+		</section>
+		<!-- ĐỊA ĐIỂM NỔI BẬT  -->
+		<section>
+			<div class="relative py-8 md:py-16">
+				<!-- title -->
+				<div class="py-2 mb-6 md:mb-10">
+					<h1 class="flex justify-center text-2xl md:text-3xl text-blue-900 font-bold">
+						ĐỊA ĐIỂM NỔI BẬT
+					</h1>
+				</div>
+				<!-- picture -->
+				<div class="flex justify-center">
+					<div class="flex items-center">
+						<img src="img/dia diem/Rectangle 40.png" alt="" class="p-2 shadow bg-white" />
+					</div>
+					<div class="grid grid-rows-2 gap-0">
+						<div class="flex flex-row items-end">
+							<img src="img/dia diem/Rectangle 30.png" alt="" class="p-2 shadow bg-white" />
+						</div>
+						<div class="flex flex-row items-start">
+							<img src="img/dia diem/Rectangle 30.png" alt="" class="p-2 shadow bg-white" />
+						</div>
+					</div>
+					<div class="grid grid-rows-2 gap-0">
+						<img src="img/dia diem/Rectangle 28.png" alt="" class="p-2 shadow bg-white" />
+						<img src="img/dia diem/Rectangle 28.png" alt="" class="p-2 shadow bg-white" />
+					</div>
+					<div class="grid grid-rows-2 gap-0">
+						<div class="flex flex-row items-end">
+							<img src="img/dia diem/Rectangle 30.png" alt="" class="p-2 shadow bg-white" />
+						</div>
+						<div class="flex flex-row items-start">
+							<img src="img/dia diem/Rectangle 30.png" alt="" class="p-2 shadow bg-white" />
+						</div>
+					</div>
+					<div class="flex items-center">
+						<img src="img/dia diem/Rectangle 40.png" alt="" class="p-2 shadow bg-white" />
+					</div>
+				</div>
+				<!-- bg -->
+				<div class="absolute inset-0 -z-10">
+					<img src="img/dia diem/Screenshot (180) 1.png" alt="" class="w-full h-full" />
+				</div>
+			</div>
+		</section>
+		<!-- TIN TỨC  -->
+		<section>
+			<div class="px-4 md:px-8 pb-8">
+				<!-- title -->
+				<div class="py-8">
+					<h1 class="flex justify-center text-3xl text-blue-900 font-bold">TIN TỨC</h1>
+				</div>
+				<!-- grid -->
+				<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+					<div class="shadow rounded">
+						<img src="img/tin tuc/Rectangle 37.png" alt="" class="w-full rounded-t" />
+						<div class="px-2">
+							<h1
+								class="text-center font-bold my-2 line-clamp-2 md:line-clamp-none text-sm md:text-base"
+							>
+								Bật Mí 6 Địa Điểm Chụp Hình Đẹp Tại Vũng Tàu Khiến Bạn Thích Mê
+							</h1>
+							<div class="flex justify-center">
+								<div class="border-b border-1 border-blue-900 w-16 my-1"></div>
+							</div>
+							<p class="text-center font-light my-2 text-xs">
+								Vũng Tàu thường là nơi bạn có thể hòa mình vào biển, rong chơi
+							</p>
+						</div>
+					</div>
+					<div class="shadow rounded">
+						<img src="img/tin tuc/Rectangle 38.png" alt="" class="w-full rounded-t" />
+						<div class="px-2">
+							<h1
+								class="text-center font-bold my-2 line-clamp-2 md:line-clamp-none text-sm md:text-base"
+							>
+								Bật Mí 6 Địa Điểm Chụp Hình Đẹp Tại Vũng Tàu Khiến Bạn Thích Mê
+							</h1>
+							<div class="flex justify-center">
+								<div class="border-b border-1 border-blue-900 w-16 my-1"></div>
+							</div>
+							<p class="text-center font-light my-2 text-xs">
+								Vũng Tàu thường là nơi bạn có thể hòa mình vào biển, rong chơi
+							</p>
+						</div>
+					</div>
+					<div class="shadow rounded">
+						<img src="img/tin tuc/Rectangle 39.png" alt="" class="w-full rounded-t" />
+						<div class="px-2">
+							<h1
+								class="text-center font-bold my-2 line-clamp-2 md:line-clamp-none text-sm md:text-base"
+							>
+								Bật Mí 6 Địa Điểm Chụp Hình Đẹp Tại Vũng Tàu Khiến Bạn Thích Mê
+							</h1>
+							<div class="flex justify-center">
+								<div class="border-b border-1 border-blue-900 w-16 my-1"></div>
+							</div>
+							<p class="text-center font-light my-2 text-xs">
+								Vũng Tàu thường là nơi bạn có thể hòa mình vào biển, rong chơi
+							</p>
+						</div>
+					</div>
+					<div class="shadow rounded">
+						<img src="img/tin tuc/Rectangle 43.png" alt="" class="w-full rounded-t" />
+						<div class="px-2">
+							<h1
+								class="text-center font-bold my-2 line-clamp-2 md:line-clamp-none text-sm md:text-base"
+							>
+								Bật Mí 6 Địa Điểm Chụp Hình Đẹp Tại Vũng Tàu Khiến Bạn Thích Mê
+							</h1>
+							<div class="flex justify-center">
+								<div class="border-b border-1 border-blue-900 w-16 my-1"></div>
+							</div>
+							<p class="text-center font-light my-2 text-xs">
+								Vũng Tàu thường là nơi bạn có thể hòa mình vào biển, rong chơi
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- xem thhem -->
+				<div class="flex justify-center mt-4">
+					<button class="rounded bg-blue-800 font-bold py-2 px-4 text-white hover:bg-blue-700">
+						XEM THEM
+					</button>
+				</div>
+			</div>
+		</section>
+		<!-- ĐÁNH GIÁ KHÁCH HÀNG  -->
+		<section>
+			<div class="relative py-8">
+				<!-- title -->
+				<div class="pb-4">
+					<h1 class="flex justify-center text-lg md:text-3xl text-white font-bold">
+						ĐÁNH GIÁ KHÁCH HÀNG
+					</h1>
+				</div>
+
+				<div>
+					<div id="rating" class="relative" data-te-carousel-init data-te-carousel-slide>
+						<div
+							class="relative w-full overflow-hidden after:clear-both after:block after:content-['']"
+						>
+							<div
+								class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+								data-te-carousel-item
+								data-te-carousel-active
+							>
+								<!-- grid -->
+								<div class="grid grid-cols-1 md:grid-cols-3 gap-4 mx-14 lg:mx-24">
+									<div class="bg-blue-900/50 p-4 rounded">
+										<!-- avatar -->
+										<div class="flex justify-center">
+											<img src="img/danh gia/Ellipse 6.png" alt="" />
+										</div>
+										<!-- rating -->
+										<div class="flex items-center justify-center">
+											<p class="mr-2 text-lg font-bold text-yellow-500 dark:text-gray-400">4.95</p>
+											<svg
+												aria-hidden="true"
+												class="text-yellow-400 w-7 h-7"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<title>First star</title>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												aria-hidden="true"
+												class="text-yellow-400 w-7 h-7"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<title>Second star</title>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												aria-hidden="true"
+												class="text-yellow-400 w-7 h-7"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<title>Third star</title>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												aria-hidden="true"
+												class="text-yellow-400 w-7 h-7"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<title>Fourth star</title>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												aria-hidden="true"
+												class="text-gray-300 w-7 h-7 dark:text-gray-500"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<title>Fifth star</title>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+										</div>
+										<!-- name & comment -->
+										<div class="flex justify-center">
+											<h1 class="text-center text-white font-bold">MAI LINH</h1>
+										</div>
+										<div class="flex justify-center">
+											<p class="text-center text-white font-light">
+												Trải nghiệm tại Căn hộ Prenium thật tuyệt với gia đình tôi, căn hộ có đầy đủ
+												tiện nghi, được ở đây lâu chắc chúng tôi sẽ thọ thêm 10 năm tuổi vì đây
+												chính là nơi đáng sống!
+											</p>
+										</div>
+									</div>
+									<div class="hidden md:block bg-blue-900/50 p-4 rounded">
+										<!-- avatar -->
+										<div class="flex justify-center">
+											<img src="img/danh gia/Ellipse 7.png" alt="" />
+										</div>
+										<!-- rating -->
+										<div class="flex items-center justify-center">
+											<p class="mr-2 text-lg font-bold text-yellow-500 dark:text-gray-400">4.95</p>
+											<svg
+												aria-hidden="true"
+												class="text-yellow-400 w-7 h-7"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<title>First star</title>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												aria-hidden="true"
+												class="text-yellow-400 w-7 h-7"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<title>Second star</title>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												aria-hidden="true"
+												class="text-yellow-400 w-7 h-7"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<title>Third star</title>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												aria-hidden="true"
+												class="text-yellow-400 w-7 h-7"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<title>Fourth star</title>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												aria-hidden="true"
+												class="text-gray-300 w-7 h-7 dark:text-gray-500"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<title>Fifth star</title>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+										</div>
+										<!-- name & comment -->
+										<div class="flex justify-center">
+											<h1 class="text-center text-white font-bold">CHÍ CÔNG</h1>
+										</div>
+										<div class="flex justify-center">
+											<p class="text-center text-white font-light">
+												Trải nghiệm tại Căn hộ Prenium thật tuyệt với gia đình tôi, căn hộ có đầy đủ
+												tiện nghi, được ở đây lâu chắc chúng tôi sẽ thọ thêm 10 năm tuổi vì đây
+												chính là nơi đáng sống!
+											</p>
+										</div>
+									</div>
+									<div class="hidden md:block bg-blue-900/50 p-4 rounded">
+										<!-- avatar -->
+										<div class="flex justify-center">
+											<img src="img/danh gia/Ellipse 8.png" alt="" />
+										</div>
+										<!-- rating -->
+										<div class="flex items-center justify-center">
+											<p class="mr-2 text-lg font-bold text-yellow-500 dark:text-gray-400">4.95</p>
+											<svg
+												aria-hidden="true"
+												class="text-yellow-400 w-7 h-7"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<title>First star</title>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												aria-hidden="true"
+												class="text-yellow-400 w-7 h-7"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<title>Second star</title>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												aria-hidden="true"
+												class="text-yellow-400 w-7 h-7"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<title>Third star</title>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												aria-hidden="true"
+												class="text-yellow-400 w-7 h-7"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<title>Fourth star</title>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												aria-hidden="true"
+												class="text-gray-300 w-7 h-7 dark:text-gray-500"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<title>Fifth star</title>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+										</div>
+										<!-- name & comment -->
+										<div class="flex justify-center">
+											<h1 class="text-center text-white font-bold">THÀNH ĐẠT</h1>
+										</div>
+										<div class="flex justify-center">
+											<p class="text-center text-white font-light">
+												Trải nghiệm tại Căn hộ Prenium thật tuyệt với gia đình tôi, căn hộ có đầy đủ
+												tiện nghi, được ở đây lâu chắc chúng tôi sẽ thọ thêm 10 năm tuổi vì đây
+												chính là nơi đáng sống!
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div
+								class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+								data-te-carousel-item
+							>
+								<!-- grid -->
+								<div class="grid grid-cols-1 md:grid-cols-3 gap-4 mx-14 lg:mx-24">
+									<div class="bg-blue-900/50 p-4 rounded">
+										<!-- avatar -->
+										<div class="flex justify-center">
+											<img src="img/danh gia/Ellipse 6.png" alt="" />
+										</div>
+										<!-- rating -->
+										<div class="flex items-center justify-center">
+											<p class="mr-2 text-lg font-bold text-yellow-500 dark:text-gray-400">4.95</p>
+											<svg
+												aria-hidden="true"
+												class="text-yellow-400 w-7 h-7"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<title>First star</title>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												aria-hidden="true"
+												class="text-yellow-400 w-7 h-7"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<title>Second star</title>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												aria-hidden="true"
+												class="text-yellow-400 w-7 h-7"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<title>Third star</title>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												aria-hidden="true"
+												class="text-yellow-400 w-7 h-7"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<title>Fourth star</title>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												aria-hidden="true"
+												class="text-gray-300 w-7 h-7 dark:text-gray-500"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<title>Fifth star</title>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+										</div>
+										<!-- name & comment -->
+										<div class="flex justify-center">
+											<h1 class="text-center text-white font-bold">MAI LINH</h1>
+										</div>
+										<div class="flex justify-center">
+											<p class="text-center text-white font-light">
+												Trải nghiệm tại Căn hộ Prenium thật tuyệt với gia đình tôi, căn hộ có đầy đủ
+												tiện nghi, được ở đây lâu chắc chúng tôi sẽ thọ thêm 10 năm tuổi vì đây
+												chính là nơi đáng sống!
+											</p>
+										</div>
+									</div>
+									<div class="hidden md:block bg-blue-900/50 p-4 rounded">
+										<!-- avatar -->
+										<div class="flex justify-center">
+											<img src="img/danh gia/Ellipse 7.png" alt="" />
+										</div>
+										<!-- rating -->
+										<div class="flex items-center justify-center">
+											<p class="mr-2 text-lg font-bold text-yellow-500 dark:text-gray-400">4.95</p>
+											<svg
+												aria-hidden="true"
+												class="text-yellow-400 w-7 h-7"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<title>First star</title>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												aria-hidden="true"
+												class="text-yellow-400 w-7 h-7"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<title>Second star</title>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												aria-hidden="true"
+												class="text-yellow-400 w-7 h-7"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<title>Third star</title>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												aria-hidden="true"
+												class="text-yellow-400 w-7 h-7"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<title>Fourth star</title>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												aria-hidden="true"
+												class="text-gray-300 w-7 h-7 dark:text-gray-500"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<title>Fifth star</title>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+										</div>
+										<!-- name & comment -->
+										<div class="flex justify-center">
+											<h1 class="text-center text-white font-bold">CHÍ CÔNG</h1>
+										</div>
+										<div class="flex justify-center">
+											<p class="text-center text-white font-light">
+												Trải nghiệm tại Căn hộ Prenium thật tuyệt với gia đình tôi, căn hộ có đầy đủ
+												tiện nghi, được ở đây lâu chắc chúng tôi sẽ thọ thêm 10 năm tuổi vì đây
+												chính là nơi đáng sống!
+											</p>
+										</div>
+									</div>
+									<div class="hidden md:block bg-blue-900/50 p-4 rounded">
+										<!-- avatar -->
+										<div class="flex justify-center">
+											<img src="img/danh gia/Ellipse 8.png" alt="" />
+										</div>
+										<!-- rating -->
+										<div class="flex items-center justify-center">
+											<p class="mr-2 text-lg font-bold text-yellow-500 dark:text-gray-400">4.95</p>
+											<svg
+												aria-hidden="true"
+												class="text-yellow-400 w-7 h-7"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<title>First star</title>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												aria-hidden="true"
+												class="text-yellow-400 w-7 h-7"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<title>Second star</title>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												aria-hidden="true"
+												class="text-yellow-400 w-7 h-7"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<title>Third star</title>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												aria-hidden="true"
+												class="text-yellow-400 w-7 h-7"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<title>Fourth star</title>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												aria-hidden="true"
+												class="text-gray-300 w-7 h-7 dark:text-gray-500"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<title>Fifth star</title>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+										</div>
+										<!-- name & comment -->
+										<div class="flex justify-center">
+											<h1 class="text-center text-white font-bold">THÀNH ĐẠT</h1>
+										</div>
+										<div class="flex justify-center">
+											<p class="text-center text-white font-light">
+												Trải nghiệm tại Căn hộ Prenium thật tuyệt với gia đình tôi, căn hộ có đầy đủ
+												tiện nghi, được ở đây lâu chắc chúng tôi sẽ thọ thêm 10 năm tuổi vì đây
+												chính là nơi đáng sống!
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div
+								class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+								data-te-carousel-item
+							>
+								<!-- grid -->
+								<div class="grid grid-cols-1 md:grid-cols-3 gap-4 mx-14 lg:mx-24">
+									<div class="bg-blue-900/50 p-4 rounded">
+										<!-- avatar -->
+										<div class="flex justify-center">
+											<img src="img/danh gia/Ellipse 6.png" alt="" />
+										</div>
+										<!-- rating -->
+										<div class="flex items-center justify-center">
+											<p class="mr-2 text-lg font-bold text-yellow-500 dark:text-gray-400">4.95</p>
+											<svg
+												aria-hidden="true"
+												class="text-yellow-400 w-7 h-7"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<title>First star</title>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												aria-hidden="true"
+												class="text-yellow-400 w-7 h-7"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<title>Second star</title>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												aria-hidden="true"
+												class="text-yellow-400 w-7 h-7"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<title>Third star</title>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												aria-hidden="true"
+												class="text-yellow-400 w-7 h-7"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<title>Fourth star</title>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												aria-hidden="true"
+												class="text-gray-300 w-7 h-7 dark:text-gray-500"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<title>Fifth star</title>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+										</div>
+										<!-- name & comment -->
+										<div class="flex justify-center">
+											<h1 class="text-center text-white font-bold">MAI LINH</h1>
+										</div>
+										<div class="flex justify-center">
+											<p class="text-center text-white font-light">
+												Trải nghiệm tại Căn hộ Prenium thật tuyệt với gia đình tôi, căn hộ có đầy đủ
+												tiện nghi, được ở đây lâu chắc chúng tôi sẽ thọ thêm 10 năm tuổi vì đây
+												chính là nơi đáng sống!
+											</p>
+										</div>
+									</div>
+									<div class="hidden md:block bg-blue-900/50 p-4 rounded">
+										<!-- avatar -->
+										<div class="flex justify-center">
+											<img src="img/danh gia/Ellipse 7.png" alt="" />
+										</div>
+										<!-- rating -->
+										<div class="flex items-center justify-center">
+											<p class="mr-2 text-lg font-bold text-yellow-500 dark:text-gray-400">4.95</p>
+											<svg
+												aria-hidden="true"
+												class="text-yellow-400 w-7 h-7"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<title>First star</title>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												aria-hidden="true"
+												class="text-yellow-400 w-7 h-7"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<title>Second star</title>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												aria-hidden="true"
+												class="text-yellow-400 w-7 h-7"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<title>Third star</title>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												aria-hidden="true"
+												class="text-yellow-400 w-7 h-7"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<title>Fourth star</title>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												aria-hidden="true"
+												class="text-gray-300 w-7 h-7 dark:text-gray-500"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<title>Fifth star</title>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+										</div>
+										<!-- name & comment -->
+										<div class="flex justify-center">
+											<h1 class="text-center text-white font-bold">CHÍ CÔNG</h1>
+										</div>
+										<div class="flex justify-center">
+											<p class="text-center text-white font-light">
+												Trải nghiệm tại Căn hộ Prenium thật tuyệt với gia đình tôi, căn hộ có đầy đủ
+												tiện nghi, được ở đây lâu chắc chúng tôi sẽ thọ thêm 10 năm tuổi vì đây
+												chính là nơi đáng sống!
+											</p>
+										</div>
+									</div>
+									<div class="hidden md:block bg-blue-900/50 p-4 rounded">
+										<!-- avatar -->
+										<div class="flex justify-center">
+											<img src="img/danh gia/Ellipse 8.png" alt="" />
+										</div>
+										<!-- rating -->
+										<div class="flex items-center justify-center">
+											<p class="mr-2 text-lg font-bold text-yellow-500 dark:text-gray-400">4.95</p>
+											<svg
+												aria-hidden="true"
+												class="text-yellow-400 w-7 h-7"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<title>First star</title>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												aria-hidden="true"
+												class="text-yellow-400 w-7 h-7"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<title>Second star</title>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												aria-hidden="true"
+												class="text-yellow-400 w-7 h-7"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<title>Third star</title>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												aria-hidden="true"
+												class="text-yellow-400 w-7 h-7"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<title>Fourth star</title>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												aria-hidden="true"
+												class="text-gray-300 w-7 h-7 dark:text-gray-500"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<title>Fifth star</title>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+										</div>
+										<!-- name & comment -->
+										<div class="flex justify-center">
+											<h1 class="text-center text-white font-bold">THÀNH ĐẠT</h1>
+										</div>
+										<div class="flex justify-center">
+											<p class="text-center text-white font-light">
+												Trải nghiệm tại Căn hộ Prenium thật tuyệt với gia đình tôi, căn hộ có đầy đủ
+												tiện nghi, được ở đây lâu chắc chúng tôi sẽ thọ thêm 10 năm tuổi vì đây
+												chính là nơi đáng sống!
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<button
+							class="absolute top-0 bottom-0 left-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+							type="button"
+							data-te-target="#rating"
+							data-te-slide="prev"
+						>
+							<span class="inline-block h-8 w-8">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="currentColor"
+									class="h-6 w-6"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M15.75 19.5L8.25 12l7.5-7.5"
+									/>
+								</svg>
+							</span>
+							<span
+								class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+								>Previous</span
+							>
+						</button>
+						<button
+							class="absolute top-0 bottom-0 right-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+							type="button"
+							data-te-target="#rating"
+							data-te-slide="next"
+						>
+							<span class="inline-block h-8 w-8">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="currentColor"
+									class="h-6 w-6"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M8.25 4.5l7.5 7.5-7.5 7.5"
+									/>
+								</svg>
+							</span>
+							<span
+								class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+								>Next</span
+							>
+						</button>
+					</div>
+				</div>
+
+				<!-- bg -->
+				<div class="absolute -z-10 inset-0">
+					<img src="img/danh gia/Rectangle 65.png" alt="" class="h-full w-full" />
+				</div>
+			</div>
+		</section>
+
+		<!-- footer -->
+		<footer class="relative pt-24 mt-24">
+			<!-- grid -->
+			<div class="grid grid-cols-1 lg:grid-cols-8 gap-4 py-8">
+				<div class="lg:col-span-3">
+					<div class="flex justify-center my-2">
+						<img src="img/footer/Screenshot (180) 3.png" alt="" />
+					</div>
+					<div class="mx-8">
+						<p class="text-justify text-white">
+							Tại BENHOUSE, không chỉ bố mẹ mà các thiên thần nhỏ luôn có thể tìm thấy niềm vui ở
+							bất cứ đâu: lúc thả mình trên những chiếc giường êm ái, lúc tự tay nấu những món ăn
+							yêu thích, hoặc lúc thỏa thích đùa vui tại khu vực Vui chơi trẻ em, hồ bơi vô cực… Đặc
+							biệt hơn, chỉ cần băng qua con đường Thùy Vân, là cả nhà mình đã có thể đến với bãi
+							biển để tắm biển và vui chơi tại đây.
+						</p>
+					</div>
+				</div>
+				<div class="lg:col-span-2">
+					<div class="flex justify-center my-4">
+						<h1 class="text-white font-bold">THÔNG TIN LIÊN HỆ</h1>
+					</div>
+					<div class="mx-8">
+						<p class="text-justify text-white">Địa chỉ: 109/15 Võ Thị Sáu, Phường 2, Tp Vũng Tàu</p>
+						<p class="text-justify text-white">Hotline: 0937.686.079 - 0764.820.563</p>
+						<p class="text-justify text-white">Email: maopq.mt@vietsov.com.vn</p>
+						<p class="text-justify text-white">Website: benhousevungtau.com</p>
+						<div class="flex">
+							<p class="text-justify text-white mr-2">Bản đồ:</p>
+							<img src="img/footer/image 1.png" alt="" />
+						</div>
+					</div>
+				</div>
+				<div class="lg:col-span-3">
+					<div class="flex justify-center my-4">
+						<h1 class="text-white font-bold">QUY TRÌNH LÀM VIỆC</h1>
+					</div>
+					<div class="grid grid-cols-2 gap-2 mx-8">
+						<div>
+							<li class="text-white">Booking đặt lịch</li>
+							<li class="text-white">Check nhận phòng</li>
+							<li class="text-white">Chính sách thanh toán</li>
+							<li class="text-white">Nhận phòng</li>
+						</div>
+						<div class="">
+							<div class="py-2 flex justify-center">
+								<button class="bg-green-500 rounded-full px-4 py-1 text-white font-bold">
+									0937.686.079
+								</button>
+							</div>
+							<div class="py-2 flex justify-center">
+								<button class="bg-red-500 rounded-full px-4 py-1 text-white font-bold">
+									0764.820.563
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="my-4 flex gap-4 mx-8">
+						<img src="img/footer/Rectangle 59.png" alt="" />
+						<img src="img/footer/Rectangle 60.png" alt="" />
+					</div>
+				</div>
+			</div>
+			<!-- copyri -->
+			<div class="bg-amber-500 py-2">
+				<div class="flex justify-between mx-4 md:mx-16 lg:mx-36">
+					<div>
+						<small class="text-white"> 2023 © BEN HOUSE designed by sotagroup.vn</small>
+					</div>
+					<div class="flex items-center">
+						<small class="border-r pr-4 text-white">Đang online: 10</small>
+						<small class="pl-4 text-white">Tổng truy cập: 144520</small>
+					</div>
+				</div>
+			</div>
+			<!-- bg -->
+			<div class="absolute inset-y-0 -left-full md:-left-1/2 md:inset-x-0 -z-10">
+				<img src="img/footer/Vector 4.png" alt="" class="w-full h-full" />
+			</div>
+			<div class="absolute inset-y-0 -left-full md:-left-1/2 md:inset-x-0 -z-10">
+				<img src="img/footer/Vector 5.png" alt="" class="w-full h-full" />
+			</div>
+			<div class="absolute inset-y-0 -left-full md:-left-1/2 md:inset-x-0 -z-10">
+				<img src="img/footer/Vector 6.png" alt="" class="w-full h-full" />
+			</div>
+			<div class="absolute inset-y-0 -left-full md:-left-1/2 md:inset-x-0 -z-10">
+				<img src="img/footer/Vector 7.png" alt="" class="w-full h-full" />
+			</div>
+			<div class="absolute inset-y-0 -left-36 md:-left-1/3 md:inset-x-0 -z-20">
+				<img src="img/footer/TheSongKV_1920x1080_logo 1.png" alt="" class="w-full h-full" />
+			</div>
+		</footer>
+
+		<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+	</body>
+</html>
