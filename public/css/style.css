@@ -21,18 +21,7 @@
 	width: 100%;
 	height: 100%;
 	clip-path: polygon(65% 0px, 100% 40%, 85.46% 98.75%, 0px 100%, 0px 0px);
-	/* background: rgb(144, 142, 201); */
 }
-/* .abc-logo {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	height: 100%;
-	margin-right: 4px;
-	clip-path: polygon(65% 0px, 100% 40%, 84.65% 101.25%, 0px 100%, 0px 0px);
-	background: rgb(255, 255, 255);
-} */
 
 .img-logo {
 	background-size: cover;
@@ -67,8 +56,8 @@
 	z-index: -1;
 }
 
-.header-right::before{
-	content: "";
+.header-right::before {
+	content: '';
 	position: absolute;
 	inset: 0;
 	bottom: 60%;
@@ -78,8 +67,8 @@
 	z-index: -2;
 }
 
-.header-right::after{
-	content: "";
+.header-right::after {
+	content: '';
 	position: absolute;
 	inset: 0;
 	top: 40%;
@@ -89,23 +78,22 @@
 	z-index: -2;
 }
 
-.group-item{
+.group-item {
 	background: rgba(31, 59, 151, 1);
 }
 
 .header-top {
 	display: flex;
 	align-items: center;
-	justify-content: end;
+	justify-content: space-around;
 	height: 40%;
 	width: calc(100% + 42px);
-	border-bottom: 1px solid black;
 	background-color: #e2dada;
 	clip-path: polygon(0 0, 100% 1%, 100% 100%, 4% 100%);
 	margin-left: -42px;
 }
 
-.header-top-icon{
+.header-top-icon {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -116,7 +104,7 @@
 	height: 50%;
 }
 
-.header-top-icon:last-child{
+.header-top-icon:last-child {
 	border-right: none;
 }
 
@@ -164,7 +152,6 @@
 }
 
 .box-header-overlay {
-	position: absolute;
 	color: white;
 	transform: skew(38deg);
 }
@@ -180,15 +167,15 @@
 .overlay-image {
 	position: absolute;
 	inset: 0;
-	opacity: 0.9;
+	opacity: 0.1;
 	z-index: 1;
+	background: black;
 }
 .owl-carousel.owl-theme .box:hover .overlay-image {
 	/* background: rgba(0, 0, 0, 0.2); */
 }
 
 /* Công trình tiêu biểu */
-
 .menu-tabs {
 	display: flex;
 	justify-content: center;
